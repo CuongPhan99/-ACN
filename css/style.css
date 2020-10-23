@@ -1,0 +1,178 @@
+/* ADD YOUR CUSTOM STYLES */
+html{
+    scroll-behavior: smooth;
+}
+.bg-teal , .btn-teal{
+    background-color: #236666 !important;
+}
+.text-teal{
+    color: #236666 !important;
+}
+.carousel .carousel-indicators li {
+    width: 30px;
+    height: 5px;
+    border-radius: 0%
+}
+.carousel-caption{
+    bottom: 200px;
+}
+.carousel-item img{
+    height: 480px;
+}
+.input-group{
+    width: 50%;
+    margin: 0 auto;
+}
+/* Card */
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+.inner:hover img{
+    transform: scale(1.5);
+}
+.card.mt-3{
+    height: 415px;
+}
+.btn.btn-teal.btn-sm{
+    bottom: 10px;
+    position: absolute;
+}
+.owl-prev{
+    left: -30px;
+}
+.owl-next{
+    right: -30px;
+}
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 30%;
+}
+.owl-prev span, .owl-next span{
+    font-size: 60px;
+    color: #787878;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background-color: transparent;
+}
+/* Banner dịch vụ */
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    padding: 0 4px;
+  }
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+/* Commitment */
+.commitment-box{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.commitment-image{
+    width: 75px;
+    display: flex;
+    align-items: center;
+}
+.commitment-image img{
+    width: 80%;
+    height: auto;
+}
+.commitment-content{
+    flex: 1;
+}
+.commitment-taitle{
+    font-size: 13px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 24px;
+    float: left;
+    width: 100%;
+    padding: 6px 0;
+    font-weight: 600;
+}
+.commitment-description{
+    font-size: 13px;
+    line-height: 20px;
+}
+/* Khuyến mãi */
+.col-xs-12{
+    width: 100%;
+    height: 228px;
+}
+.subscribed-email-promotion{
+    background: #036 !important;
+    color: #fff;
+    position: relative;
+}
+.subscribed-email-promotion i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+    width: 180px;
+    background: url(https://saigontourist.net/images/email.png);
+    background-repeat: no-repeat;
+    background-position: -30px 3px;
+}
+.info-promotion{
+    padding: 25px 25px 25px 200px;
+    float: left;
+}
+.title-info-promotion{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    float: left;
+}
+.description-info-promotion{
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+    float: left;
+}
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+    .carousel-caption{
+        bottom: 20px;
+    }
+    .carousel-caption h5{
+        font-size: 30px;
+    }
+    .carousel-caption p{
+        display: none;
+    }
+  }
+      
+
+    
