@@ -1,0 +1,53 @@
+.chitiettour{
+    padding-top: 30px;
+}
+.info-tour{
+    margin-bottom: 15px;
+}
+.text-strong{
+    font-weight: 600;
+    padding-right: 15px;
+}
+/* list tour */
+.list-your-detail{
+    background: #ffeddf;
+    padding: 6px 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.list-inline .row .price {
+    color: #ff891e;
+}
+.tour-detail-title-information.tour-detail-header-col{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    border-bottom: 1px solid #333;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.title-description{
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 600;
+}
+.content-description{
+    line-height: 22px;
+    margin-bottom: 25px;
+    white-space: pre-line;
+}
+.orange-btn{
+    margin-bottom: 20px;
+    display: inline-block;
+    background: #ff891e;
+    border: 0;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 3px;
+    line-height: 22px;
+    padding: 5px 15px;
+}
+/* list image */
+.isotopeSelector{
+    margin-bottom: 25px;
+}

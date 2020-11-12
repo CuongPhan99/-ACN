@@ -1,9 +1,16 @@
 /* ADD YOUR CUSTOM STYLES */
-html{
+body{
     scroll-behavior: smooth;
+    font-size: 14px;
+    line-height: 21px;
+    color: black;
+    font-weight: 400;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
 }
 .bg-teal , .btn-teal{
     background-color: #236666 !important;
+    font-size: 14px;
+    color: white;
 }
 .text-teal{
     color: #236666 !important;
