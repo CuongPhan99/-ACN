@@ -1,3 +1,27 @@
+/* ten tour */
+.background-description {
+    position: absolute;
+    width: 97%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 25px;
+    max-height: 160px;
+    z-index: 100;
+}
+.background-description .tour-banner-title {
+    text-align: left;
+    color: #ffffff;
+    font-size: 32px;
+    width: 100%;
+    margin: 15px 0px;
+}
+/* thoi gian tour */
 .chitiettour{
     padding-top: 30px;
 }
@@ -9,6 +33,9 @@
     padding-right: 15px;
 }
 /* list tour */
+.ls{
+   line-height: 35px;
+}
 .list-your-detail{
     background: #ffeddf;
     padding: 6px 10px;
@@ -50,4 +77,70 @@
 /* list image */
 .isotopeSelector{
     margin-bottom: 25px;
+}
+.isotopeSelector img{
+    width: 100%;
+    transition: all 1s ease;
+}
+.isotopeSelector:hover img{
+    transform: scale(1.2);
+}
+/* chương trình tour */
+.tab {
+overflow: hidden;
+border-bottom: 1px solid #000;
+}
+
+.tab button {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 17px;
+}
+
+.tab button:hover {
+background-color: #ddd;
+}
+
+.tab button.active{
+color: #ff891e;
+border: 1px solid #000;
+border-bottom-color: transparent;
+border-radius: 5px;
+}
+
+.tabcontent {
+padding: 6px 12px;
+border-top: none;
+}
+
+/* ho tro khach hang */
+.right-detail-tour-box {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 15px;
+    float: left;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.right-detail-tour-box .title {
+    color: #ff891e;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 7px;
+    float: left;
+    width: 100%;
+}
+.list-rows{
+    margin-left: -30px;
+}
+.list-rows>li, .list-rows>li>a>i, .list-rows>li>a>span{
+    color: #333;
+}
+.item{
+    list-style: none;
 }
