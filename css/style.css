@@ -27,8 +27,31 @@ body{
     height: 480px;
 }
 .input-group{
-    width: 50%;
     margin: 0 auto;
+    padding-top: 20px;
+}
+/* ten tour */
+.background-description {
+    position: absolute;
+    width: 97%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 25px;
+    max-height: 160px;
+    z-index: 100;
+}
+.background-description .tour-banner-title {
+    text-align: left;
+    color: #ffffff;
+    font-size: 32px;
+    width: 100%;
+    margin: 15px 0px;
 }
 /* Card */
 .inner{

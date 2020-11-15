@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/danhsachtour.css" rel="stylesheet">
+    <link href="assets/owl.carousel.min.css" rel="stylesheet"/>
+    <link href="assets/owl.theme.default.min.css"/>
+    <title>MC Travel</title>
+</head>
+<body>
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-teal navbar-light bg-light justify-content-start sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+               <i class="fa fa-plane-departure"></i> MC Travel</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#travel-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="travel-navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#search" class="nav-link">TOUR TRONG NƯỚC</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#places" class="nav-link">TOUR NƯỚC NGOÀI</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#gallery" class="nav-link">DỊCH VỤ DU LỊCH</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#contact" class="nav-link">LIÊN HỆ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider Section -->
+    <section>
+        <div class="carousel slide" id="travel-slider" data-ride="carousel">           
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://saigontourist.net//uploads/destination/TrongNuoc/Dalat/Night-light-of-Center-traffic-Landmark.jpg" alt="" class="img-fluid w-100">
+                </div>                
+            </div>
+           
+        </div>
+    </section>
+    <section>
+        <div class="container" style="position: relative">
+            <div class="background-description">
+                <h1 class="tour-banner-title">Du lịch Nha Trang - Đà Lạt</h1>
+            </div>
+        </div>
+    </section>
+    <!-- Tìm kiếm tour theo ngày -->
+    <section class="search-tour-section">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-lg"><span class="fa fa-search"></span></span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="input-group input-group-lg">                            
+                            <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="input-group input-group-lg">                            
+                            <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>               
+              </div>
+              <div class="col-sm-2" style="padding-top: 20px;">
+                <button type="button" class="btn btn-teal">Tìm kiếm</button>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- Danh sách tour -->
+    <section class="list-tour-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="filter-list-tour">
+                        <div class="filter-text">Sắp xếp :</div>
+                        <div class="filter-tour">
+                            <a class="filter-div  active" href="#">[ Ngày gần nhất ]</a>
+                            <a class="filter-div " href="/vi/tour-trong-nuoc?limit=20&amp;_sort=min-price">[ Giá thấp nhất ]</a>
+                            <a class="filter-div " href="/vi/tour-trong-nuoc?limit=20&amp;_sort=popular">[ Hấp dẫn nhất ]</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="view-list-tour">
+                        <i onclick="return viewTour('grid')" class="fa fa-th " aria-hidden="true"></i>
+                        <span> | </span>
+                        <i onclick="return viewTour('list')" class="fa fa-th-list active" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row box-search-tour">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="inner">
+                                <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8">
+                            <div class="row box-search-tour-info">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="title-tour">
+                                        <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
+                                            Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
+                                        </a>
+                                    </div>
+                                    <div class="destination-tour">
+                                        TP. Hồ Chí Minh - 
+                                                                                    Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
+                                    <div class="detail-tour">
+                                        Thời gian
+                                        : 6 ngày 5 đêm<br>
+                                        Phương tiện
+                                        : Hàng không Vietnam Airlines <br>
+                                        -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
+                                            <a class="btn btn-teal">
+                                                <span class="text">Giá từ  </span>
+                                                <span class="price">8.029.000</span>
+                                            </a>
+                                        </div>
+                                        <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
+                                            <div>
+                                                <ul class="list-inline detailsBtn" style="display:block;float: none;">
+                                                    <li>
+                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a class="box-view-more select-tour-action">
+                                                <i class="fa fa-calendar" style="color: #333;"></i> 
+
+                                                <span class="text">Xem thêm</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row box-search-tour">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="inner">
+                                <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8">
+                            <div class="row box-search-tour-info">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="title-tour">
+                                        <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
+                                            Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
+                                        </a>
+                                    </div>
+                                    <div class="destination-tour">
+                                        TP. Hồ Chí Minh - 
+                                                                                    Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
+                                    <div class="detail-tour">
+                                        Thời gian
+                                        : 6 ngày 5 đêm<br>
+                                        Phương tiện
+                                        : Hàng không Vietnam Airlines <br>
+                                        -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
+                                            <a class="btn btn-teal">
+                                                <span class="text">Giá từ  </span>
+                                                <span class="price">8.029.000</span>
+                                            </a>
+                                        </div>
+                                        <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
+                                            <div>
+                                                <ul class="list-inline detailsBtn" style="display:block;float: none;">
+                                                    <li>
+                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a class="box-view-more select-tour-action">
+                                                <i class="fa fa-calendar" style="color: #333;"></i> 
+
+
+                                                <span class="text">Xem thêm</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row box-search-tour">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="inner">
+                                <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8">
+                            <div class="row box-search-tour-info">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="title-tour">
+                                        <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
+                                            Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
+                                        </a>
+                                    </div>
+                                    <div class="destination-tour">
+                                        TP. Hồ Chí Minh - 
+                                                                                    Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
+                                    <div class="detail-tour">
+                                        Thời gian
+                                        : 6 ngày 5 đêm<br>
+                                        Phương tiện
+                                        : Hàng không Vietnam Airlines <br>
+                                        -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
+                                            <a class="btn btn-teal">
+                                                <span class="text">Giá từ  </span>
+                                                <span class="price">8.029.000</span>
+                                            </a>
+                                        </div>
+                                        <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
+                                            <div>
+                                                <ul class="list-inline detailsBtn" style="display:block;float: none;">
+                                                    <li>
+                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a class="box-view-more select-tour-action">
+                                                <i class="fa fa-calendar" style="color: #333;"></i> 
+
+
+                                                <span class="text">Xem thêm</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row box-search-tour">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="inner">
+                                <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8">
+                            <div class="row box-search-tour-info">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="title-tour">
+                                        <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
+                                            Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
+                                        </a>
+                                    </div>
+                                    <div class="destination-tour">
+                                        TP. Hồ Chí Minh - 
+                                                                                    Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
+                                    <div class="detail-tour">
+                                        Thời gian
+                                        : 6 ngày 5 đêm<br>
+                                        Phương tiện
+                                        : Hàng không Vietnam Airlines <br>
+                                        -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
+                                            <a class="btn btn-teal">
+                                                <span class="text">Giá từ  </span>
+                                                <span class="price">8.029.000</span>
+                                            </a>
+                                        </div>
+                                        <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
+                                            <div>
+                                                <ul class="list-inline detailsBtn" style="display:block;float: none;">
+                                                    <li>
+                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a class="box-view-more select-tour-action">
+                                                <i class="fa fa-calendar" style="color: #333;"></i> 
+
+ 
+                                                <span class="text">Xem thêm</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Phân trang -->
+            <div class="row">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                </nav>
+            </div>       
+        </div>
+    </section>
+    <!-- Main Footer -->
+    <footer class="p-3 mt-3 bg-teal text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Copyright &copy; 2020 , MC Travel</h3>
+                    <h6>Website MCTravel.NET đã được đăng ký với Bộ Công Thương</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Bootstrap Js files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+    $('.carousel').carousel({
+        interval : 3000,
+        pause : 'hover'
+    });
+    $('.owl-carousel').owlCarousel({
+        autoplay: true,
+        autoplayHoverPause: true,
+        items: 3,
+        nav: true,
+        dots: true,
+        loop: true,
+    });
+</script>
+</body>
+</html>

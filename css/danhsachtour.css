@@ -1,0 +1,116 @@
+.list-tour-section .box-search-tour {
+    margin-bottom: 25px;
+    padding-bottom: 8px;
+    box-shadow: 0 2px 3px -2px grey;
+    -moz-box-shadow: 0 2px 3px -2px grey;
+    -webkit-box-shadow: 0 2px 3px -2px grey;
+}
+/* tìm kiếm tour */
+.btn-teal{
+    height:48px; 
+    width: 100%;
+}
+.search-tour-section{
+    padding-bottom: 20px;
+}
+/* sắp xếp */
+.list-tour-section .filter-list-tour {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    line-height: 22px;
+    display: inline-block;
+}
+.list-tour-section .filter-list-tour .filter-text {
+    float: left;
+    width: 90px;
+    font-weight: 600;
+}
+.view-list-tour{
+    float: right;
+}
+/* danh sách tour */
+.inner img{
+    height: 246px;
+}
+.title-tour > a {
+    color: #05558a;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 0;
+    line-height: 30px;
+    float: left;
+    width: 100%;
+}
+.destination-tour {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 6px 0 15px;
+    line-height: 22px;
+    float: left;
+    width: 100%;
+}
+.detail-tour {
+    font-size: 13px;
+    line-height: 22px;
+    text-align: left;
+    color: #333;
+}
+/* giá */
+.textInfo {
+    height: 35px;
+    line-height: 35px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #dedede;
+    padding: 0 15px;
+    color: #969696;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: block;
+}
+.box-price-tour {
+    padding: 0 15px;
+    margin: 0 auto;
+    background: #ff891e;
+    display: table;
+    height: 40px;
+    overflow: hidden;
+}
+.text {
+    font-size: 13px;
+    color: #fff;
+    margin-right: 10px;
+    padding: 2px 0;
+}
+.price {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #fff;
+    padding: 2px 0;
+}
+.row-box-price {
+    text-align: center;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.row-box-views {
+    text-align: center;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.box-view-more > .text {
+    font-size: 13px;
+    line-height: 24px;
+    color: #333;
+    padding: 2px 0;
+}
+/* chuyển trang */
