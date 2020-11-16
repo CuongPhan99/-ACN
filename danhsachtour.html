@@ -127,238 +127,401 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="view-list-tour">
-                        <i onclick="return viewTour('grid')" class="fa fa-th " aria-hidden="true"></i>
-                        <span> | </span>
-                        <i onclick="return viewTour('list')" class="fa fa-th-list active" aria-hidden="true"></i>
+                        <button class="tablinks" onclick="openCity(event, 'Listview')" ><i class="fa fa-th active"></i>   </button>
+                        <button class="tablinks" onclick="openCity(event, 'Gridview')" id="defaultOpen"><i class="fa fa-th-list "></i></button>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="row box-search-tour">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="inner">
-                                <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-sm-8">
-                            <div class="row box-search-tour-info">
-                                <div class="col-md-8 col-sm-8">
-                                    <div class="title-tour">
-                                        <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
-                                            Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
-                                        </a>
-                                    </div>
-                                    <div class="destination-tour">
-                                        TP. Hồ Chí Minh - 
-                                                                                    Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
-                                    <div class="detail-tour">
-                                        Thời gian
-                                        : 6 ngày 5 đêm<br>
-                                        Phương tiện
-                                        : Hàng không Vietnam Airlines <br>
-                                        -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
-                                    </div>
+                <div id="Gridview" class="tabcontent">
+                    <div class="col-sm-12">
+                        <div class="row box-search-tour">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="inner">
+                                    <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
                                 </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="row">
-                                        <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
-                                            <a class="btn btn-teal">
-                                                <span class="text">Giá từ  </span>
-                                                <span class="price">8.029.000</span>
+                            </div>
+                            <div class="col-md-8 col-sm-8">
+                                <div class="row box-search-tour-info">
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="title-tour">
+                                            <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
+                                                Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
                                             </a>
                                         </div>
-                                        <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
-                                            <div>
-                                                <ul class="list-inline detailsBtn" style="display:block;float: none;">
-                                                    <li>
-                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
-                                                    </li>
-                                                </ul>
+                                        <div class="destination-tour">
+                                            TP. Hồ Chí Minh - 
+                                                                                        Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
+                                        <div class="detail-tour">
+                                            Thời gian
+                                            : 6 ngày 5 đêm<br>
+                                            Phương tiện
+                                            : Hàng không Vietnam Airlines <br>
+                                            -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="row">
+                                            <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
+                                                <a class="btn btn-teal">
+                                                    <span class="text">Giá từ  </span>
+                                                    <span class="price">8.029.000</span>
+                                                </a>
                                             </div>
-                                            <a class="box-view-more select-tour-action">
-                                                <i class="fa fa-calendar" style="color: #333;"></i> 
-
-                                                <span class="text">Xem thêm</span>
-                                            </a>
+                                            <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
+                                                <div>
+                                                    <ul class="list-inline detailsBtn" style="display:block;float: none;">
+                                                        <li>
+                                                            <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="box-view-more select-tour-action">
+                                                    <i class="fa fa-calendar" style="color: #333;"></i> 
+    
+                                                    <span class="text">Xem thêm</span>
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>                                  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row box-search-tour">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="inner">
-                                <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-sm-8">
-                            <div class="row box-search-tour-info">
-                                <div class="col-md-8 col-sm-8">
-                                    <div class="title-tour">
-                                        <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
-                                            Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
-                                        </a>
-                                    </div>
-                                    <div class="destination-tour">
-                                        TP. Hồ Chí Minh - 
-                                                                                    Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
-                                    <div class="detail-tour">
-                                        Thời gian
-                                        : 6 ngày 5 đêm<br>
-                                        Phương tiện
-                                        : Hàng không Vietnam Airlines <br>
-                                        -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
-                                    </div>
+                                    </div>                                  
                                 </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="row">
-                                        <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
-                                            <a class="btn btn-teal">
-                                                <span class="text">Giá từ  </span>
-                                                <span class="price">8.029.000</span>
-                                            </a>
-                                        </div>
-                                        <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
-                                            <div>
-                                                <ul class="list-inline detailsBtn" style="display:block;float: none;">
-                                                    <li>
-                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <a class="box-view-more select-tour-action">
-                                                <i class="fa fa-calendar" style="color: #333;"></i> 
-
-
-                                                <span class="text">Xem thêm</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>                                  
                             </div>
                         </div>
-                    </div>
-                    <div class="row box-search-tour">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="inner">
-                                <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-sm-8">
-                            <div class="row box-search-tour-info">
-                                <div class="col-md-8 col-sm-8">
-                                    <div class="title-tour">
-                                        <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
-                                            Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
-                                        </a>
-                                    </div>
-                                    <div class="destination-tour">
-                                        TP. Hồ Chí Minh - 
-                                                                                    Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
-                                    <div class="detail-tour">
-                                        Thời gian
-                                        : 6 ngày 5 đêm<br>
-                                        Phương tiện
-                                        : Hàng không Vietnam Airlines <br>
-                                        -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
-                                    </div>
+                        <div class="row box-search-tour">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="inner">
+                                    <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
                                 </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="row">
-                                        <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
-                                            <a class="btn btn-teal">
-                                                <span class="text">Giá từ  </span>
-                                                <span class="price">8.029.000</span>
+                            </div>
+                            <div class="col-md-8 col-sm-8">
+                                <div class="row box-search-tour-info">
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="title-tour">
+                                            <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
+                                                Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
                                             </a>
                                         </div>
-                                        <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
-                                            <div>
-                                                <ul class="list-inline detailsBtn" style="display:block;float: none;">
-                                                    <li>
-                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
-                                                    </li>
-                                                </ul>
+                                        <div class="destination-tour">
+                                            TP. Hồ Chí Minh - 
+                                                                                        Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
+                                        <div class="detail-tour">
+                                            Thời gian
+                                            : 6 ngày 5 đêm<br>
+                                            Phương tiện
+                                            : Hàng không Vietnam Airlines <br>
+                                            -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="row">
+                                            <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
+                                                <a class="btn btn-teal">
+                                                    <span class="text">Giá từ  </span>
+                                                    <span class="price">8.029.000</span>
+                                                </a>
                                             </div>
-                                            <a class="box-view-more select-tour-action">
-                                                <i class="fa fa-calendar" style="color: #333;"></i> 
-
-
-                                                <span class="text">Xem thêm</span>
-                                            </a>
+                                            <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
+                                                <div>
+                                                    <ul class="list-inline detailsBtn" style="display:block;float: none;">
+                                                        <li>
+                                                            <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="box-view-more select-tour-action">
+                                                    <i class="fa fa-calendar" style="color: #333;"></i> 
+    
+    
+                                                    <span class="text">Xem thêm</span>
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>                                  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row box-search-tour">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="inner">
-                                <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-sm-8">
-                            <div class="row box-search-tour-info">
-                                <div class="col-md-8 col-sm-8">
-                                    <div class="title-tour">
-                                        <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
-                                            Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
-                                        </a>
-                                    </div>
-                                    <div class="destination-tour">
-                                        TP. Hồ Chí Minh - 
-                                                                                    Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
-                                    <div class="detail-tour">
-                                        Thời gian
-                                        : 6 ngày 5 đêm<br>
-                                        Phương tiện
-                                        : Hàng không Vietnam Airlines <br>
-                                        -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
-                                    </div>
+                                    </div>                                  
                                 </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="row">
-                                        <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
-                                            <a class="btn btn-teal">
-                                                <span class="text">Giá từ  </span>
-                                                <span class="price">8.029.000</span>
+                            </div>
+                        </div>
+                        <div class="row box-search-tour">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="inner">
+                                    <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-8">
+                                <div class="row box-search-tour-info">
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="title-tour">
+                                            <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
+                                                Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
                                             </a>
                                         </div>
-                                        <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
-                                            <div>
-                                                <ul class="list-inline detailsBtn" style="display:block;float: none;">
-                                                    <li>
-                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <a class="box-view-more select-tour-action">
-                                                <i class="fa fa-calendar" style="color: #333;"></i> 
-
- 
-                                                <span class="text">Xem thêm</span>
-                                            </a>
+                                        <div class="destination-tour">
+                                            TP. Hồ Chí Minh - 
+                                                                                        Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
+                                        <div class="detail-tour">
+                                            Thời gian
+                                            : 6 ngày 5 đêm<br>
+                                            Phương tiện
+                                            : Hàng không Vietnam Airlines <br>
+                                            -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
                                         </div>
                                     </div>
-                                </div>                                  
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="row">
+                                            <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
+                                                <a class="btn btn-teal">
+                                                    <span class="text">Giá từ  </span>
+                                                    <span class="price">8.029.000</span>
+                                                </a>
+                                            </div>
+                                            <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
+                                                <div>
+                                                    <ul class="list-inline detailsBtn" style="display:block;float: none;">
+                                                        <li>
+                                                            <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="box-view-more select-tour-action">
+                                                    <i class="fa fa-calendar" style="color: #333;"></i> 
+    
+    
+                                                    <span class="text">Xem thêm</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row box-search-tour">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="inner">
+                                    <img src="https://saigontourist.net/uploads/destination/TrongNuoc/Ninhbinh/Trang-An-Scenic-Landscape-Complex_269380076.jpg">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-8">
+                                <div class="row box-search-tour-info">
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="title-tour">
+                                            <a href="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-url="/vi/tour-trong-nuoc/3821/du-lich-hai-phong-ha-long-ninh-binh-ha-noi-lao-cai-sapa-den-hung" data-id="3821" data-name="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng" data-price="8029000" data-category="Chùm tour trong nước kích cầu" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng">
+                                                Du lịch Hải Phòng - Hạ Long - Ninh Bình - Hà Nội - Lào Cai - Sapa - Đền Hùng
+                                            </a>
+                                        </div>
+                                        <div class="destination-tour">
+                                            TP. Hồ Chí Minh - 
+                                                                                        Hà Nội  |                                             Sapa  |                                             Ninh Bình                                     </div>
+                                        <div class="detail-tour">
+                                            Thời gian
+                                            : 6 ngày 5 đêm<br>
+                                            Phương tiện
+                                            : Hàng không Vietnam Airlines <br>
+                                            -  Thăm quần thể di tích Bạch Đằng Giang với đền thờ các vị anh...
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="row">
+                                            <div class="row-box-price col-md-12 col-sm-12 col-xs-6">
+                                                <a class="btn btn-teal">
+                                                    <span class="text">Giá từ  </span>
+                                                    <span class="price">8.029.000</span>
+                                                </a>
+                                            </div>
+                                            <div class="row-box-views  col-md-12 col-sm-12 col-xs-6" style="display: block">
+                                                <div>
+                                                    <ul class="list-inline detailsBtn" style="display:block;float: none;">
+                                                        <li>
+                                                            <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>17/11/2020</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="textInfo"><i class="fa fa-calendar" aria-hidden="true"></i>24/11/2020</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="box-view-more select-tour-action">
+                                                    <i class="fa fa-calendar" style="color: #333;"></i> 
+    
+     
+                                                    <span class="text">Xem thêm</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>                                  
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div id="Listview" class="tabcontent" style="display: none;">
+                    <div class="container mt-5 mb-5">
+                        <div class=" card-deck">
+                            <div class="col-md-4 col-sm-6">
+                                <article class="box isotopeSelector box-kiritm box-tour">
+                                    <figure>
+                                    <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" class="popup-gallery image-box-relative image-box-3x2">
+                                        <img width="100%" height="250" alt="Du lịch Nha Trang - Đà Lạt" src="https://saigontourist.net/uploads/destination/TrongNuoc/Dalat/Night-light-of-Center-traffic-Landmark.jpg">
+                                    </a>
+                                    </figure>
+                                    <div class="box-tour-price">
+                                        <p class="text">Giá từ</p>
+                                        <p class="price">4.279.000</p>
+                                        <p class="info">5 ngày 4 đêm</p>
+                                    </div>
+                                    <div class="details-kiritm">
+                                        <div class="name-tour-detail">
+                                            <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-url="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-id="3847" data-name="Du lịch Nha Trang - Đà Lạt" data-price="4279000" data-category="Tour Đà Lạt" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Nha Trang - Đà Lạt">Du lịch Nha Trang - Đà Lạt</a>
+                                        </div>
+                                        <div class="bottom-detail">
+                                            <div class="info-tour">TP. Hồ Chí Minh - Đà Lạt | Nha Trang </div>
+                                        </div>
+                                    </div>
+                                </article>  
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <article class="box isotopeSelector box-kiritm box-tour">
+                                    <figure>
+                                    <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" class="popup-gallery image-box-relative image-box-3x2">
+                                        <img width="100%" height="250" alt="Du lịch Nha Trang - Đà Lạt" src="https://saigontourist.net/uploads/destination/TrongNuoc/Dalat/Night-light-of-Center-traffic-Landmark.jpg">
+                                    </a>
+                                    </figure>
+                                    <div class="box-tour-price">
+                                        <p class="text">Giá từ</p>
+                                        <p class="price">4.279.000</p>
+                                        <p class="info">5 ngày 4 đêm</p>
+                                    </div>
+                                    <div class="details-kiritm">
+                                        <div class="name-tour-detail">
+                                            <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-url="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-id="3847" data-name="Du lịch Nha Trang - Đà Lạt" data-price="4279000" data-category="Tour Đà Lạt" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Nha Trang - Đà Lạt">Du lịch Nha Trang - Đà Lạt</a>
+                                        </div>
+                                        <div class="bottom-detail">
+                                            <div class="info-tour">TP. Hồ Chí Minh - Đà Lạt | Nha Trang </div>
+                                        </div>
+                                    </div>
+                                </article>  
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <article class="box isotopeSelector box-kiritm box-tour">
+                                    <figure>
+                                    <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" class="popup-gallery image-box-relative image-box-3x2">
+                                        <img width="100%" height="250" alt="Du lịch Nha Trang - Đà Lạt" src="https://saigontourist.net/uploads/destination/TrongNuoc/Dalat/Night-light-of-Center-traffic-Landmark.jpg">
+                                    </a>
+                                    </figure>
+                                    <div class="box-tour-price">
+                                        <p class="text">Giá từ</p>
+                                        <p class="price">4.279.000</p>
+                                        <p class="info">5 ngày 4 đêm</p>
+                                    </div>
+                                    <div class="details-kiritm">
+                                        <div class="name-tour-detail">
+                                            <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-url="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-id="3847" data-name="Du lịch Nha Trang - Đà Lạt" data-price="4279000" data-category="Tour Đà Lạt" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Nha Trang - Đà Lạt">Du lịch Nha Trang - Đà Lạt</a>
+                                        </div>
+                                        <div class="bottom-detail">
+                                            <div class="info-tour">TP. Hồ Chí Minh - Đà Lạt | Nha Trang </div>
+                                        </div>
+                                    </div>
+                                </article>  
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <article class="box isotopeSelector box-kiritm box-tour">
+                                    <figure>
+                                    <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" class="popup-gallery image-box-relative image-box-3x2">
+                                        <img width="100%" height="250" alt="Du lịch Nha Trang - Đà Lạt" src="https://saigontourist.net/uploads/destination/TrongNuoc/Dalat/Night-light-of-Center-traffic-Landmark.jpg">
+                                    </a>
+                                    </figure>
+                                    <div class="box-tour-price">
+                                        <p class="text">Giá từ</p>
+                                        <p class="price">4.279.000</p>
+                                        <p class="info">5 ngày 4 đêm</p>
+                                    </div>
+                                    <div class="details-kiritm">
+                                        <div class="name-tour-detail">
+                                            <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-url="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-id="3847" data-name="Du lịch Nha Trang - Đà Lạt" data-price="4279000" data-category="Tour Đà Lạt" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Nha Trang - Đà Lạt">Du lịch Nha Trang - Đà Lạt</a>
+                                        </div>
+                                        <div class="bottom-detail">
+                                            <div class="info-tour">TP. Hồ Chí Minh - Đà Lạt | Nha Trang </div>
+                                        </div>
+                                    </div>
+                                </article>  
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <article class="box isotopeSelector box-kiritm box-tour">
+                                    <figure>
+                                    <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" class="popup-gallery image-box-relative image-box-3x2">
+                                        <img width="100%" height="250" alt="Du lịch Nha Trang - Đà Lạt" src="https://saigontourist.net/uploads/destination/TrongNuoc/Dalat/Night-light-of-Center-traffic-Landmark.jpg">
+                                    </a>
+                                    </figure>
+                                    <div class="box-tour-price">
+                                        <p class="text">Giá từ</p>
+                                        <p class="price">4.279.000</p>
+                                        <p class="info">5 ngày 4 đêm</p>
+                                    </div>
+                                    <div class="details-kiritm">
+                                        <div class="name-tour-detail">
+                                            <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-url="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-id="3847" data-name="Du lịch Nha Trang - Đà Lạt" data-price="4279000" data-category="Tour Đà Lạt" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Nha Trang - Đà Lạt">Du lịch Nha Trang - Đà Lạt</a>
+                                        </div>
+                                        <div class="bottom-detail">
+                                            <div class="info-tour">TP. Hồ Chí Minh - Đà Lạt | Nha Trang </div>
+                                        </div>
+                                    </div>
+                                </article>  
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <article class="box isotopeSelector box-kiritm box-tour">
+                                    <figure>
+                                    <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" class="popup-gallery image-box-relative image-box-3x2">
+                                        <img width="100%" height="250" alt="Du lịch Nha Trang - Đà Lạt" src="https://saigontourist.net/uploads/destination/TrongNuoc/Dalat/Night-light-of-Center-traffic-Landmark.jpg">
+                                    </a>
+                                    </figure>
+                                    <div class="box-tour-price">
+                                        <p class="text">Giá từ</p>
+                                        <p class="price">4.279.000</p>
+                                        <p class="info">5 ngày 4 đêm</p>
+                                    </div>
+                                    <div class="details-kiritm">
+                                        <div class="name-tour-detail">
+                                            <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-url="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-id="3847" data-name="Du lịch Nha Trang - Đà Lạt" data-price="4279000" data-category="Tour Đà Lạt" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Nha Trang - Đà Lạt">Du lịch Nha Trang - Đà Lạt</a>
+                                        </div>
+                                        <div class="bottom-detail">
+                                            <div class="info-tour">TP. Hồ Chí Minh - Đà Lạt | Nha Trang </div>
+                                        </div>
+                                    </div>
+                                </article>  
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <article class="box isotopeSelector box-kiritm box-tour">
+                                    <figure>
+                                    <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" class="popup-gallery image-box-relative image-box-3x2">
+                                        <img width="100%" height="250" alt="Du lịch Nha Trang - Đà Lạt" src="https://saigontourist.net/uploads/destination/TrongNuoc/Dalat/Night-light-of-Center-traffic-Landmark.jpg">
+                                    </a>
+                                    </figure>
+                                    <div class="box-tour-price">
+                                        <p class="text">Giá từ</p>
+                                        <p class="price">4.279.000</p>
+                                        <p class="info">5 ngày 4 đêm</p>
+                                    </div>
+                                    <div class="details-kiritm">
+                                        <div class="name-tour-detail">
+                                            <a href="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-url="/vi/tour-trong-nuoc/3847/dulich-nha-trang-da-lat" data-id="3847" data-name="Du lịch Nha Trang - Đà Lạt" data-price="4279000" data-category="Tour Đà Lạt" data-brand="tour-trong-nuoc" data-list="List" data-position="1" class="GAproductClick" title="Du lịch Nha Trang - Đà Lạt">Du lịch Nha Trang - Đà Lạt</a>
+                                        </div>
+                                        <div class="bottom-detail">
+                                            <div class="info-tour">TP. Hồ Chí Minh - Đà Lạt | Nha Trang </div>
+                                        </div>
+                                    </div>
+                                </article>  
+                            </div>
+                        </div>
+                    </div>                        
+                </div> 
             </div>
     <!-- Phân trang -->
             <div class="row">
@@ -407,6 +570,23 @@
         dots: true,
         loop: true,
     });
+</script>
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
 </script>
 </body>
 </html>

@@ -30,6 +30,7 @@
 .view-list-tour{
     float: right;
 }
+/* list view */
 /* danh sách tour */
 .inner img{
     height: 246px;
@@ -113,4 +114,67 @@
     color: #333;
     padding: 2px 0;
 }
-/* chuyển trang */
+/* grid view */
+.box-kiritm {
+    float: left;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.box-kiritm.box-tour {
+    margin: 15px 0;
+    position: relative;
+}
+.box-kiritm.box-tour .details-kiritm {
+    position: relative;
+}.box-kiritm.box-tour .details-kiritm .name-tour-detail {
+    padding: 15px 15px 8px;
+}
+.box-kiritm .details-kiritm .name-tour-detail {
+    color: #05558a;
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    padding: 4px 10px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+}.box-kiritm .details-kiritm .name-tour-detail > a {
+    text-decoration: none;
+    color: #05558a;
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 44px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -moz-box;
+    -moz-line-clamp: 2;
+    -moz-box-orient: vertical;
+}.box-kiritm .details-kiritm .bottom-detail {
+    padding: 2px 10px;
+    float: left;
+    width: 100%;
+    display: flex;
+}
+.box-kiritm.box-tour .details-kiritm .bottom-detail .info-tour {
+    text-transform: uppercase;
+}
+.box-kiritm .details-kiritm .bottom-detail .info-tour {
+    flex: 1;
+    font-size: 13px;
+    color: #555;
+    line-height: 30px;
+}
+

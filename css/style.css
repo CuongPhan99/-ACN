@@ -53,6 +53,47 @@ body{
     width: 100%;
     margin: 15px 0px;
 }
+/* giá tour */
+.box-tour-price {
+    position: absolute;
+    padding: 5px 0px;
+    top: 35px;
+    right: 0px;
+    background: #ff891e;
+    color: #fff;
+    width: 110px;
+}
+.box-tour-price .text {
+    color: #fff;
+    text-align: right;
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0px 10px;
+    margin: 0;
+}
+.box-tour-price .price {
+    color: #fff;
+    text-align: right;
+    width: 100%;
+    float: left;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0px 10px;
+    margin: 0;
+}
+.box-tour-price .info {
+    color: #fff;
+    text-align: right;
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0px 10px;
+    margin: 0;
+}
 /* Card */
 .inner{
     overflow: hidden;
