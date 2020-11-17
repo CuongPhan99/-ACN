@@ -1,0 +1,54 @@
+/* Tiêu đê */
+.pageTitle {
+    background-image: url(../img/pages/page-title-bg.jpg);
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 330px;
+}
+.pageTitle .titleTable {
+    margin-top: 130px;
+    display: table;
+    height: 200px;
+    width: 100%;
+}
+.pageTitle .titleTable .titleTableInner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.pageTitle .titleTable .titleTableInner .pageTitleInfo h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.under-border {
+    width: 60px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 16px auto 0;
+}
+/* Danh sách  */
+.mainContentSection{
+    padding-top: 30px;
+}
+.media:first-child {
+    margin-top: 0;
+}
+.blogPostListItem {
+    width: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.blogPostListItem .media-body {
+    padding-bottom: 15px;
+}
+.marginExten {
+    margin-left: -24px;
+    margin-right: -24px;
+}

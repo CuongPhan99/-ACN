@@ -1,0 +1,89 @@
+/* ảnh banner */
+.pageTitle {
+    background-image: url(../img/pages/page-title-bg.jpg);
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 330px;
+}
+.page-image-tour-tag {
+    height: 480px;
+    margin-top: 0 !important;
+    background-position: center;
+}
+/* chi tiết tin */
+.mainContentSection {
+    padding-top: 30px;
+}
+.countryTabs {
+    margin-bottom: 60px;
+}
+.countryTabs .tab-content {
+    padding-top: 30px;
+}
+.tab-content>.active {
+    display: block;
+}
+/* .tab-content>.tab-pane {
+    display: none;
+} */
+/* tin mới */
+.tabArea .tab-content {
+    background-color: whitesmoke;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 20px 16px;
+}
+.tabArea .tab-content .media .media-body .media-heading {
+    color: #222222;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 5px;
+    float: left;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.media-body{
+    margin-left: 15px;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+/* Style the buttons inside the tab */
+.tab button {
+width: 50%;
+background-color: inherit;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+border: 1px solid #ccc;
+border-top: none;
+}
