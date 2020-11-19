@@ -1,0 +1,350 @@
+/* tiêu đề */
+.pageTitle {
+    background-image: url(../img/pages/page-title-bg.jpg);
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 330px;
+}
+.pageTitle .titleTable {
+    margin-top: 130px;
+    display: table;
+    height: 200px;
+    width: 100%;
+}
+.pageTitle .titleTable .titleTableInner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.pageTitle .titleTable .titleTableInner .pageTitleInfo h1 {
+    color: #ffffff;
+    font-size: 30px;
+}
+/* đặt tour */
+.progress-wizard {
+    margin-top: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.progress-wizard > .progress-wizard-step {
+    padding: 0;
+    position: relative;
+    margin-bottom: 40px;
+}   
+.progress-wizard > .progress-wizard-step:first-child > .progress {
+    left: 50%;
+    width: 50%;
+}
+.progress-wizard > .progress-wizard-step > .progress {
+    position: relative;
+    border-radius: 0px;
+    height: 2px;
+    background: transparent;
+    box-shadow: none;
+    margin: 0;
+}
+.progress-wizard > .progress-wizard-step > .progress-wizard-dot {
+    text-decoration: none;
+    float: left;
+    display: block;
+    background-color: #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #ff891e;
+    padding: 15px;
+    text-align: center;
+    max-width: 200px;
+    color: #222222;
+}
+.payment-wrap {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.booking-container .payment-wrap .title {
+    float: none;
+    margin: 10px 0;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+form span.error {
+    font-size: 12px;
+    color: red;
+    display: block;
+    margin-top: 2px;
+}
+.highlight-text {
+    margin-left: 5px;
+    margin-top: 26px;
+    color: #000;
+}
+.highlight-text li {
+    font-size: 13px;
+    font-style: italic;
+    list-style-type: disc;
+}
+.add-on-services {
+    padding: 10px 0 0 0;
+}
+.add-on-services .service-box-image {
+    margin-bottom: 15px;
+}
+.image-box-relative.image-box-3x2 {
+    padding-bottom: 66.66%;
+}
+.image-box-relative {
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.image-box-relative img {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto !important;
+}
+.add-on-services .service-box-content {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.add-on-services .service-box-content .content-title {
+    float: left;
+    width: 100%;
+    color: #05558a;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 44px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -moz-box;
+    -moz-line-clamp: 2;
+    -moz-box-orient: vertical;
+}
+.add-on-services .service-box-content .content-description {
+    float: left;
+    width: 100%;
+    color: #333;
+    font-size: 13px;
+    line-height: 22px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 66px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -moz-box;
+    -moz-line-clamp: 3;
+    -moz-box-orient: vertical;
+}
+.add-on-services .service-box-price {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.add-on-services .service-box-price .price-info {
+    float: left;
+    width: 100%;
+    color: #333;
+    font-size: 13px;
+    line-height: 22px;
+    padding-bottom: 15px;
+}
+.add-on-services .service-box-price .price-info > strong {
+    font-size: 18px;
+    padding: 0 5px;
+}
+.add-on-services .service-box-price .price-number {
+    float: left;
+    width: 100%;
+    color: #333;
+}
+.add-on-services .service-box-price .price-number .label-price-number {
+    font-size: 13px;
+    line-height: 40px;
+}
+.add-on-services .service-box-price .price-number .input-price-number {
+    height: 40px;
+    box-shadow: none;
+    background-color: #e0e0e0;
+    color: #000;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 14px;
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 10px;
+    line-height: 22px;
+}
+.prepayment {
+    padding: 10px 0 25px;
+}
+.prepayment .prepayment-method {
+    display: flex;
+}
+.prepayment .prepayment-method .box-radio-method {
+    flex: 1;
+}
+.prepayment .prepayment-method .box-radio-method .radio-method {
+    display: none;
+}
+.prepayment .prepayment-method .box-radio-method .mar-radio-method {
+    margin: 0 10px 0 0;
+    width: calc(100% - 10px);
+    border-radius: 4px;
+    line-height: 40px;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    background: #bfe2bf;
+    cursor: pointer;
+}
+.prepayment .prepayment-method .box-radio-method input[type="radio"]:checked + .mar-radio-method {
+    background: #5cb85c;
+    color: #fff;
+}
+.promotion-code .form-group {
+    display: inline-block;
+}
+.btn.btn-orange {
+    padding: 0 15px;
+    color: #ffffff;
+    background-color: #ff891e;
+    border-color: #ff891e;
+    line-height: 43px;
+}
+.buttonArea.galleryBtnArea {
+    text-align: left;
+    padding: 60px 0;
+}
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.buttonArea.galleryBtnArea .tablinks, .buttonArea.galleryBtnArea .paginationCenter .pagination li:first-child a, .paginationCenter .pagination li:first-child .buttonArea.galleryBtnArea a, .buttonArea.galleryBtnArea .paginationCenter .pagination li:last-child a, .paginationCenter .pagination li:last-child .buttonArea.galleryBtnArea a, .buttonArea.galleryBtnArea .isotopeFilters ul.filter > li a, .isotopeFilters ul.filter > li .buttonArea.galleryBtnArea a {
+    background-color: whitesmoke;
+    border-color: #ff891e;
+    color: #222222;
+    padding: 0 30px;
+}
+.buttonArea.galleryBtnArea .tablinks:hover {
+    background: #ff891e;
+}
+.buttonArea .tablinks, .buttonArea .paginationCenter .pagination li:first-child a, .paginationCenter .pagination li:first-child .buttonArea a, .buttonArea .paginationCenter .pagination li:last-child a, .paginationCenter .pagination li:last-child .buttonArea a, .buttonArea .isotopeFilters ul.filter > li a, .isotopeFilters ul.filter > li .buttonArea a {
+    height: 45px;
+    line-height: 45px;
+}
+.tablinks, .paginationCenter .pagination li:first-child a, .paginationCenter .pagination li:last-child a, .isotopeFilters ul.filter > li a {
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    border-color: #dedede;
+    padding: 0 15px;
+    color: #969696;
+    text-transform: uppercase;
+    outline: 0;
+}
+/* thông tin cá nhân */
+.bookingDrop .sbHolder {
+    margin: 0px 0 20px 0;
+    border-color: #e5e5e5;
+    background-color: #e0e0e0;
+}
+.bookingDrop .sbHolder {
+    background-color: #f5f5f5;
+    border: none;
+    margin: 4px 0 20px 0;
+    border-radius: 4px;
+}
+
+/* thông tin tour phải */
+.infoTitle-kiritm {
+    margin: 25px 0;
+    text-align: center;
+    line-height: 44px;
+    background: #ff891e;
+    color: #fff;
+    font-size: 18px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.bookDetailsInfo {
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.bookDetailsInfo img {
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+}
+.infoArea {
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 0 0 4px 4px;
+}
+.bookDetailsInfo .infoArea > h3 {
+    margin-bottom: 15px;
+}
+.bookDetailsInfo .infoArea > h3 > a {
+    color: #036;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+}
+.bookDetailsInfo .infoArea .list-unstyled > li {
+    padding: 7px 0;
+    border-bottom: 0;
+}
+.bookDetailsInfo .infoArea .list-unstyled > li > span {
+    font-weight: 600;
+    color: #000;
+}
+.infoArea h3 {
+    font-size: 16px;
+    color: #222222;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.priceTotal h2 {
+    text-transform: capitalize;
+    color: #222222;
+    font-size: 26px;
+    font-weight: 400;
+}
+.priceTotal h2 span {
+    color: #ff891e;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
